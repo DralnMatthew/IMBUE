@@ -1,0 +1,29 @@
+_target_: tasks.psychometric.PsychometricTask
+
+name: Psychometric
+
+dim_x: 1
+dim_y: 1
+
+n_context_init: 0
+n_query_init: 200
+
+n_target_theta: 4
+
+design_scale: 5
+
+# Required by the shared embedder/encoder configs; no prior channel here.
+num_bins: 100
+prior_injection: False
+
+range_min: [-3, 0.1, 0.0, 0.0]
+range_max: [3, 2, 0.15, 0.06]
+
+with_query: True
+
+design_range_min: -5
+design_range_max: 5
+
+embedding_type: theta
+
+prob_good_trajectory: 0.7

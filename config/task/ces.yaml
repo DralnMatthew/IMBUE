@@ -1,0 +1,29 @@
+_target_: tasks.ces.CESTask
+
+name: CES
+
+dim_x: 6
+dim_y: 1
+
+n_context_init: 0
+n_query_init: 200
+
+n_target_theta: 5
+
+# Required by the shared embedder/encoder configs; no prior channel here.
+num_bins: 100
+prior_injection: False
+
+range_min: [0.05, 0, 0, 0, -8]
+range_max: [1, 1, 1, 1, 8]
+
+with_query: True
+
+design_range_min: 0
+design_range_max: 100
+
+design_scale: 100
+
+embedding_type: theta
+
+prob_good_trajectory: 0.7

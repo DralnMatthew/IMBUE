@@ -1,0 +1,34 @@
+_target_: tasks.location_finding.HiddenLocation
+
+name: Location
+
+dim_x: 2
+dim_y: 1
+
+num_bins: 100
+prior_injection: True
+
+n_target_theta: 2 # (x, y)
+
+n_context_init: 0
+n_query_init: 200
+
+range_min: 0
+range_max: 1
+K: 1
+
+with_query: True
+
+theta_dist: ace
+design_scale: 1
+outcome_scale: 10
+noise_scale: 0.5
+base_signal: 0.1
+max_signal: 1e-4
+
+design_range_min: 0
+design_range_max: 1
+
+embedding_type: theta
+
+prob_good_prior: 0.7

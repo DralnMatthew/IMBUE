@@ -1,0 +1,15 @@
+_target_: model.encoder.HierarchicalEncoder
+dim_embedding: 32
+dim_feedforward: 128
+n_head: 4
+dropout: 0.0
+prior_injection: ${task.prior_injection}
+
+use_trajectories: ${use_trajectories}
+n_summary_tokens: ${n_summary_tokens}
+
+n_intra_layers: ${n_intra_layers}
+n_inter_layers: ${n_inter_layers}
+
+gating: ${gating}
+gating_mode: ${gating_mode}

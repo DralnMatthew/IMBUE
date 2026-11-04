@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editors / OS
+.idea/
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+
+# Training runs, logs and cluster output
+outputs/
+wandb/
+out/
+
+# Evaluation outputs
+results/
+figures/
+data/

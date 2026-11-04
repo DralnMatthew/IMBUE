@@ -1,0 +1,30 @@
+_target_: tasks.gp.GPTask
+
+name: GP
+
+dim_x: 2
+dim_y: 1
+
+n_context_init: 1
+n_query_init: 200
+
+n_target_data: 100
+n_target_theta: 3 # must be dim_x + 1 (lengthscales, variance)
+
+design_scale: 5
+noise_scale: 0.01
+
+lengthscale_lower: 0.1
+lengthscale_upper: 2.0
+
+with_query: True
+
+# Auxiliary-trajectory params (GP does not use prior_injection).
+prior_injection: False
+num_bins: 100
+prob_good_trajectory: 0.7
+
+design_range_min: -5
+design_range_max: 5
+
+embedding_type: data

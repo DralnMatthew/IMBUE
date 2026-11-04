@@ -1,0 +1,16 @@
+_target_: model.embedder.Embedder
+
+dim_x: ${task.dim_x}
+dim_y: ${task.dim_y}
+dim_embedding: ${encoder.dim_embedding}
+dim_feedforward: ${encoder.dim_feedforward}
+prior_injection: ${task.prior_injection}
+num_bins: ${task.num_bins} # used if prior_injection is True
+n_target_theta: ${task.n_target_theta} # used to create theta embedding
+
+with_query: ${task.with_query}
+
+use_trajectories: ${use_trajectories}
+n_summary_tokens: ${n_summary_tokens}
+
+embedding_type: ${task.embedding_type}
